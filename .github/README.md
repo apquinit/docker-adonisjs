@@ -7,7 +7,7 @@ Docker image for AdonisJs applications.
 Pull the Docker image.
 
 ```bash
-docker pull apquinit/adonisjs:1.0.0
+docker pull apquinit/adonisjs:latest
 ```
 
 Run the Docker image and create container.
@@ -21,13 +21,13 @@ docker run --name adonisjs adonisjs
 The working directory inside the container is `/var/www` so to keep the application data, mount a directory onto that volume.
 
 ```bash
-docker run --name adonisjs -v /path/to/app:/var/www apquinit/adonisjs:1.0.0
+docker run --name adonisjs -v /path/to/app:/var/www apquinit/adonisjs:latest
 ```
 
 The working directory can be changed by passing the `-w` flag, make sure to update the mounted volume to preserve data.
 
 ```bash
-docker run --name adonisjs -w /usr/app -v /path/to/app:/usr/app apquinit/adonisjs:1.0.0
+docker run --name adonisjs -w /usr/app -v /path/to/app:/usr/app apquinit/adonisjs:latest
 ```
 
 ### Custom application type
@@ -35,7 +35,7 @@ docker run --name adonisjs -w /usr/app -v /path/to/app:/usr/app apquinit/adonisj
 If the working directory is empty, the image will create a new adonis application in that directory
 
 ```bash
-docker run --name adonisjs -v /path/to/app:/var/www -e "adonisFlags=--slim --yarn" apquinit/adonisjs:1.0.0
+docker run --name adonisjs -v /path/to/app:/var/www -e "adonisFlags=--slim --yarn" apquinit/adonisjs:latest
 ```
 
 To see possible options, visit the [documentation](http://dev.adonisjs.com/docs/4.0/installation#_customizing_new_command).
