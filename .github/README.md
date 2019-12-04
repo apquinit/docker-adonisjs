@@ -24,7 +24,7 @@ The working directory inside the container is `/var/www` so to keep the applicat
 docker run --name adonisjs -v /path/to/app:/var/www apquinit/adonisjs:1.0.0
 ```
 
-The working directory can be changed by passing the `-w` flag, please make sure to update the mounted volume to preserve data.
+The working directory can be changed by passing the `-w` flag, make sure to update the mounted volume to preserve data.
 
 ```bash
 docker run --name adonisjs -w /usr/app -v /path/to/app:/usr/app apquinit/adonisjs:1.0.0
