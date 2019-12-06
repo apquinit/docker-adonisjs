@@ -3,7 +3,7 @@
 if [[ -z "$(ls -A $PWD 2>/dev/null)" ]]; then
 	adonis new . $adonisFlags
 	sed -i -e "s/HOST=.*/HOST=0.0.0.0/g" .env
-	sed -i -e "s/PORT=.*/PORT=80/g" .env
+	sed -i -e "s/PORT=.*/PORT=3333/g" .env
 fi
 
 if [[ -z "$(ls -A $PWD | grep .env)" ]]; then
