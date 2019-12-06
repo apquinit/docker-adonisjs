@@ -1,5 +1,7 @@
 # AdonisJs Docker Image
 
+[![Build Status](https://travis-ci.org/apquinit/docker-adonisjs.svg?branch=master)](https://travis-ci.org/apquinit/docker-adonisjs)
+
 Docker image for AdonisJs applications.
 
 ## How to use
