@@ -1,4 +1,4 @@
-FROM node:8
+FROM node:12
 
 LABEL maintainer="Alexander Paul P. Quinit <paulquinit@gmail.com>"
 
@@ -6,7 +6,7 @@ LABEL maintainer="Alexander Paul P. Quinit <paulquinit@gmail.com>"
 RUN npm i -g @adonisjs/cli
 
 # Change working directory
-WORKDIR /var/www
+WORKDIR /home/node/app
 
 # Copy init.sh
 COPY init.sh /init.sh
