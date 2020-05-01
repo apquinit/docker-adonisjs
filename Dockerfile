@@ -6,7 +6,7 @@ LABEL maintainer="Alexander Paul P. Quinit <paulquinit@gmail.com>"
 RUN npm i -g @adonisjs/cli
 
 # Change working directory
-WORKDIR /home/node/app
+WORKDIR /var/www
 
 # Copy init.sh
 COPY init.sh /init.sh
