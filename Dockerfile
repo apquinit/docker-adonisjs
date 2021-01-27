@@ -1,4 +1,4 @@
-FROM node:12
+FROM node:14
 
 LABEL maintainer="Alexander Paul P. Quinit <paulquinit@gmail.com>"
 
