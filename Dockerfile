@@ -8,6 +8,8 @@ RUN npm i -g @adonisjs/cli
 # Change working directory
 WORKDIR /var/www
 
+EXPOSE 80
+
 # Copy init.sh
 COPY init.sh /init.sh
 
